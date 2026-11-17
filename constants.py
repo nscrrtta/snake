@@ -1,0 +1,28 @@
+SQUARE_SIZE = 30
+
+# !!! Must be a factor of SQUARE_SIZE !!!
+SNAKE_SPEED = 3
+
+# Number of steps it takes to travel one square
+STEPS = SQUARE_SIZE // SNAKE_SPEED
+
+ROWS = 10
+COLS = 15
+
+MAX_SCORE = ROWS * COLS
+
+PLAY_AREA_WIDTH  = SQUARE_SIZE * COLS
+PLAY_AREA_HEIGHT = SQUARE_SIZE * ROWS
+
+WINDOW_WIDTH  = PLAY_AREA_WIDTH
+# Extra rows for rendering text
+WINDOW_HEIGHT = PLAY_AREA_HEIGHT + SQUARE_SIZE * 2
+
+FONT_SIZE = SQUARE_SIZE * 4//3
+
+# Where text is rendered
+y = (WINDOW_HEIGHT + PLAY_AREA_HEIGHT) / 2
+MIDLEFT = SQUARE_SIZE / 2, y
+MIDRIGHT = WINDOW_WIDTH - SQUARE_SIZE / 2, y
+
+FPS = 60
